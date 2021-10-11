@@ -1,0 +1,16 @@
+// printing 10 numbers from 0 to 9 in ascending order
+
+var x = 0
+while(x<10){
+  println(x)
+  x+=1
+}
+
+// printing 10 numbers from 0 to 9 in descending order
+
+var x=10
+while(x>0){
+ println(x)
+ x-=1
+}
+
