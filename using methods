@@ -1,0 +1,7 @@
+-- General method of using a method in Scala
+def cube(x:Int):Int={x*x*x}
+println(cube(5))
+
+-- We can intiallize the varaibles and pass inputs 
+val square = (x:Int) => x*x
+println(square(23))
