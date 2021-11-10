@@ -1,0 +1,23 @@
+// scala is too intelligent to understand the data type.
+// It is not necessary to define the data type
+
+var num = 8
+var str = "coffee"
+
+// in to order call the values declared before, we can us $ symbol in front of the declared name along with a s at first
+
+println(s"$num times he had his $str")
+
+// we can het boolean results by using {} in the print statement
+
+var x=10
+println(s"checking the value if it is ${x==10}")
+
+// printing the refernced, formatted, raw and tab values respectively 
+
+val y = 2.704
+
+println(s"the value is : $y")
+println(f"the value is : $y%.3f")
+println(raw"the value is\t: $y")
+println(s"the value is\t: $y")
