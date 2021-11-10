@@ -1,0 +1,16 @@
+// List
+val x = (1 to 10).toList
+print(x)
+
+val x = (0 to 10 by 2).toList
+print(x)
+
+// Sequence
+val x = (1 to 10).toSeq
+print(x)
+
+// Set
+var x = (1 to 10).toSet
+var y = collection.mutable.SortedSet[Int]()++ x 
+print(y)
+
