@@ -1,0 +1,22 @@
+// if we do want to include the last value, we use TO in a for loop
+for(x <- 1 to 5){
+  println(s"values are $x")
+}
+
+// if we don't want to include the last value, we use UNTIL in a for loop
+
+for(x <- 1 until 5){
+  println(s"values are $x")
+}
+
+// using list in a for loop
+var l1 = List("a1", "a2", "b1", "b3", "c3", "c7")
+for(l <- l1 if l contains  "a")
+  println(s"found values $l")
+  
+// assigning the results from a list in a for loop
+var list = List("A", "B", "C", "D", "E", "F")
+var res = for{
+  temp <- list
+    if (temp == "A" || temp == "C")}
+  yield temp
