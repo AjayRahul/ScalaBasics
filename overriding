@@ -1,0 +1,36 @@
+class Animal{
+    def func1(name: String, age: Int): Unit = {
+        println(s"This is an animal. My name is $name and $age is my age")
+    }
+}
+
+class Dog extends Animal{
+    override def func1(name: String, age: Int): Unit = {
+        println(s"This is a dog. My name is $name and $age is my age")
+    }
+}
+
+class Cat extends Animal{
+    override def func1(name: String, age: Int): Unit = {
+        println(s"This is a cat. My name is $name and $age is my age")
+    }
+}
+
+object main{
+    def main(args: Array[String]): Unit = {
+        val ani = new Animal()
+        ani.func1("Ani", 4)
+
+      //The output is: This is an animal. My name is Ani and 4 is my age
+
+        val ani1 = new Dog()
+        ani1.func1("Dawuh", 5)
+
+      //This is a dog. My name is Dawuh and 5 is my age
+        
+        val ani2 = new Cat()
+        ani2.func1("Meooh", 3)
+
+     //This is a cat. My name is Meooh and 3 is my age
+    }
+}
