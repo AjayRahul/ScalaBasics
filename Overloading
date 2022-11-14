@@ -1,0 +1,26 @@
+class scl{
+  def func1(x:Int, y:Int) : Int = {
+    var z = x + y
+    return z
+  }
+  def func1(x:Int, y:Double): Double = {
+    var zz = x + y
+    return zz
+  }
+}
+
+object main{
+  def main(args: Array[String]):Unit ={
+    var obj = new scl();
+    
+    var res = obj.func1(1,3)
+     println(res)
+    
+    //the output is: 4
+    
+    var res1 = obj.func1(1, 5.1)
+    println(res1)
+    
+    //the output is: 6.1    
+  }
+}
