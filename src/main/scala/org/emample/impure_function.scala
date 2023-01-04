@@ -19,4 +19,17 @@ object impure_function extends App{
   }
 
   println(compareBook(b1, b2))
+
+
+  import java.util.Calendar
+  val calender = Calendar.getInstance()
+  val current_time = calender.get(Calendar.HOUR_OF_DAY)+ ":" +calender.get(Calendar.MINUTE)
+  print(current_time)
+
+  /*
+    11:27
+    Above is the Last worked time
+  */
+
+
 }
