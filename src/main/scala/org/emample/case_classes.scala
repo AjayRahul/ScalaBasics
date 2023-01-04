@@ -9,11 +9,11 @@ object case_classes extends App{
   }
 
   val ansRectangle = Rectangle(3, 7)
-  println("area of small rectangle is", ansRectangle.area)
+  print("area of small rectangle is", ansRectangle.area)
   // (area of small rectangle is,21)
 
   val largeRectangle = ansRectangle.copy(width = (ansRectangle.width * 4), height = (ansRectangle.height*8))
-  println("area of large rectangle is", largeRectangle.area)
+  print("area of large rectangle is", largeRectangle.area)
   // (area of small rectangle is,672)
 
   case class Square(side: Int){
@@ -21,7 +21,7 @@ object case_classes extends App{
   }
 
   val ansSquare = Square(3)
-  println("area of small rectangle is", ansSquare.area)
+  print("area of small rectangle is", ansSquare.area)
   // (area of small rectangle is,12)
 
 }
